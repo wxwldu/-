@@ -55,6 +55,8 @@
     
     [SMSSDK registerApp:@"ad8ebcefdb20" withSecret:@"a4680499834ce225f4e8d6c7b07bba7f"];
     
+    //检查更新
+    [self checkVersion];
     
     
     [self getAddressBooks];
@@ -427,6 +429,66 @@
 }
 
 
+/**
+ *  检测软件是否需要升级
+ */
+-(void)checkVersion
+{
+    NSString *url = [NSString stringWithFormat:@"http://itunes.apple.com/cn/lookup?id=%i",ProjectAPPID];
+
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [manager POST:url parameters:nil  success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSDictionary *dic =[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        
+        
+        NSString *newVersion;
+        NSArray *resultArray = [dic objectForKey:@"results"];
+        for (id config in resultArray) {
+            newVersion = [config valueForKey:@"version"];
+        }
+        if (newVersion) {
+            NSLog(@"通过AppStore获取的版本号是：%@",newVersion);
+        }
+        //获取本地版本号
+        NSString *localVersion = [[[NSBundle mainBundle]infoDictionary]objectForKey:@"CFBundleShortVersionString"];
+        NSString *msg = [NSString stringWithFormat:@"你当前的版本是V%@，发现新版本V%@，是否下载新版本？",localVersion,newVersion];
+        if ([newVersion floatValue] > [localVersion floatValue]) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"升级提示!" message:msg delegate:self cancelButtonTitle:@"下次再说" otherButtonTitles:@"现在升级", nil];
+            alert.tag = 0001;
+            [alert show];
+        }
+        
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"error");
+        NSLog(@"从AppStore获取版本信息失败！！");
+    }];
+
+    
+    
+    
+}
+
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView.tag == 0001) {
+        //软件需要更新提醒
+        if (buttonIndex == 1) {
+            NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/cn/app/wan-zhuan-quan-cheng/id%i?mt=8",ProjectAPPID]];
+            [[UIApplication sharedApplication]openURL:url];
+            /*
+             // 打开iTunes 方法二:此方法总是提示“无法连接到itunes”，不推荐使用
+             NSString *iTunesLink = @"itms-apps://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftwareUpdate?id=%i&mt=8";
+             NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"itms-apps://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftwareUpdate?id=%i&mt=8",iFeverAPPID]];
+             [[UIApplication sharedApplication] openURL:url];
+             */
+        }
+    }
+}
 
 
 @end

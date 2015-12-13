@@ -13,7 +13,9 @@
 #import "AppDelegate.h"
 // ---------------------------- MBP ----------------------------
 
+
 #pragma mark - _____________ Environments _____________
+
 
 
 #ifdef MORNINGSTAR
@@ -93,6 +95,12 @@ enum {
 
 
 #pragma mark - _____________ UI Elements _____________
+
+
+//APP ID
+#define ProjectAPPID  1067643742
+ //1067643742
+
 
 //#define MBPCardViewWidth 268.0f
 //#define MBPCardViewHeight 326.0f
