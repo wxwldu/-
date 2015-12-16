@@ -173,7 +173,7 @@
     UIButton *aButton =(UIButton *)sender;
     
     NSMutableArray *aPickArray =[[NSMutableArray alloc]init];
-    for (int x =0; x <=50; x++) {
+    for (int x =0; x <=300; x++) {
         NSString *numberString =[NSString stringWithFormat:@"%d",x];
         [aPickArray addObject:numberString];
     }

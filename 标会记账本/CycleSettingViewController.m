@@ -509,7 +509,7 @@ return nil;
     UIButton *aButton =(UIButton *)sender;
     
     NSMutableArray *aPickArray =[[NSMutableArray alloc]init];
-    for (int x =1; x <=50; x++) {
+    for (int x =1; x <=300; x++) {
         NSString *numberString =[NSString stringWithFormat:@"%d",x];
         [aPickArray addObject:numberString];
     }
@@ -804,7 +804,7 @@ return nil;
                 
             } else if([resuldId isKindOfClass:[NSArray class]]){
                 NSArray *json =[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-                self.myDataArray = json;
+                self.myDataArray = [NSMutableArray arrayWithArray:json];
                 _aNewData = [NSMutableArray arrayWithArray:json];
                 [self.mytableView reloadData];
                 
