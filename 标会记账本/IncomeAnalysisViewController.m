@@ -15,7 +15,7 @@
     int currentPage ;
 }
 @property (nonatomic,strong) NSArray *myDataByTimeArray;
-@property (nonatomic,strong) NSArray *myDataByGameArray;
+@property (nonatomic,strong) NSMutableArray *myDataByGameArray;
 @end
 
 @implementation IncomeAnalysisViewController
@@ -266,7 +266,12 @@
             
         }else if ([resuldId isKindOfClass:[NSArray class]]) {
             NSArray *json =[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-            self.myDataByGameArray = [NSArray arrayWithArray:json];
+            if ([Page isEqualToString:@"1"]) {
+                self.myDataByGameArray = [NSMutableArray arrayWithArray:json];
+            }else{
+                [self.myDataByGameArray addObjectsFromArray:json];
+            }
+            
             [self.myTableView reloadData];
         }
         

@@ -27,6 +27,9 @@
     
     int page; //当前页书
 }
+@property (strong, nonatomic) IBOutlet UILabel *noneDataLabel;
+
+
 @property (strong,nonatomic) FootBidTableViewCell *aFootBidCell;
 @property (strong,nonatomic) NSMutableArray  *myDataArray;
 
@@ -546,7 +549,13 @@
                    [self.myDataArray addObjectsFromArray:json];
                 }
                 
+                if (self.myDataArray.count == 0) {
+                    self.noneDataLabel.hidden = NO;
+                }else{
+                    self.noneDataLabel.hidden = YES;
+                }
 
+                
                 [self.tableView reloadData];
                 
             }

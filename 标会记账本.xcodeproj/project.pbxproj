@@ -117,6 +117,8 @@
 		954B16B61BBAD999002DA3CF /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 954B16AC1BBAD999002DA3CF /* UIProgressView+AFNetworking.m */; };
 		954B16B71BBAD999002DA3CF /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 954B16AE1BBAD999002DA3CF /* UIRefreshControl+AFNetworking.m */; };
 		954B16B81BBAD999002DA3CF /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 954B16B01BBAD999002DA3CF /* UIWebView+AFNetworking.m */; };
+		95612C621C231C5E009A0B6E /* commonProblem.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 95612C601C231C5E009A0B6E /* commonProblem.pdf */; };
+		95612C631C231C5E009A0B6E /* operatingRules.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 95612C611C231C5E009A0B6E /* operatingRules.pdf */; };
 		9565DC841BE4707500CBC805 /* resultBiddingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9565DC831BE4707500CBC805 /* resultBiddingObject.m */; };
 		9565DC871BE48C9300CBC805 /* BidCaculatorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9565DC861BE48C9300CBC805 /* BidCaculatorObject.m */; };
 		9565DC8E1BE4CF7C00CBC805 /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9565DC891BE4CF7C00CBC805 /* SMS_SDKLocalizable.strings */; };
@@ -150,7 +152,6 @@
 		95A322A81BB982B90016F84B /* ServiceAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A322A61BB982B90016F84B /* ServiceAgreementViewController.m */; };
 		95A322A91BB982B90016F84B /* ServiceAgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A322A71BB982B90016F84B /* ServiceAgreementViewController.xib */; };
 		95ABEC331C1D1E8200B1F14A /* Agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 95ABEC301C1D1E8200B1F14A /* Agreement.pdf */; };
-		95ABEC351C1D1E8200B1F14A /* operatingRules.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 95ABEC321C1D1E8200B1F14A /* operatingRules.pdf */; };
 		95B0D5E21BAC6AA1000EA7F9 /* ic_app.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0D5D71BAC6AA1000EA7F9 /* ic_app.png */; };
 		95B0D5E31BAC6AA1000EA7F9 /* ic_discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0D5D81BAC6AA1000EA7F9 /* ic_discover.png */; };
 		95B0D5E41BAC6AA1000EA7F9 /* ic_discover_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0D5D91BAC6AA1000EA7F9 /* ic_discover_selected.png */; };
@@ -162,7 +163,6 @@
 		95B0D5EA1BAC6AA1000EA7F9 /* ic_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0D5DF1BAC6AA1000EA7F9 /* ic_user.png */; };
 		95B0D5EB1BAC6AA1000EA7F9 /* ic_user_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0D5E01BAC6AA1000EA7F9 /* ic_user_selected.png */; };
 		95B0D5EC1BAC6AA1000EA7F9 /* newicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B0D5E11BAC6AA1000EA7F9 /* newicon.png */; };
-		95CA36421C1DB7490097503A /* commonProblem.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 95CA36411C1DB7490097503A /* commonProblem.pdf */; };
 		95CDC3751BC43C58004F5278 /* RecordJiaoHuiBidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CDC3731BC43C58004F5278 /* RecordJiaoHuiBidViewController.m */; };
 		95CDC3761BC43C58004F5278 /* RecordJiaoHuiBidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95CDC3741BC43C58004F5278 /* RecordJiaoHuiBidViewController.xib */; };
 		95E3D4A61BD15D06000A906C /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E3D4A31BD15D06000A906C /* ChineseString.m */; };
@@ -418,6 +418,8 @@
 		954B16AE1BBAD999002DA3CF /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		954B16AF1BBAD999002DA3CF /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		954B16B01BBAD999002DA3CF /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		95612C601C231C5E009A0B6E /* commonProblem.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = commonProblem.pdf; sourceTree = "<group>"; };
+		95612C611C231C5E009A0B6E /* operatingRules.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = operatingRules.pdf; sourceTree = "<group>"; };
 		9565DC821BE4707500CBC805 /* resultBiddingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultBiddingObject.h; sourceTree = "<group>"; };
 		9565DC831BE4707500CBC805 /* resultBiddingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resultBiddingObject.m; sourceTree = "<group>"; };
 		9565DC851BE48C9300CBC805 /* BidCaculatorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BidCaculatorObject.h; sourceTree = "<group>"; };
@@ -460,7 +462,6 @@
 		95A322A61BB982B90016F84B /* ServiceAgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAgreementViewController.m; sourceTree = "<group>"; };
 		95A322A71BB982B90016F84B /* ServiceAgreementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceAgreementViewController.xib; sourceTree = "<group>"; };
 		95ABEC301C1D1E8200B1F14A /* Agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Agreement.pdf; sourceTree = "<group>"; };
-		95ABEC321C1D1E8200B1F14A /* operatingRules.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = operatingRules.pdf; sourceTree = "<group>"; };
 		95B0D5D71BAC6AA1000EA7F9 /* ic_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_app.png; sourceTree = "<group>"; };
 		95B0D5D81BAC6AA1000EA7F9 /* ic_discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_discover.png; sourceTree = "<group>"; };
 		95B0D5D91BAC6AA1000EA7F9 /* ic_discover_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_discover_selected.png; sourceTree = "<group>"; };
@@ -472,7 +473,6 @@
 		95B0D5DF1BAC6AA1000EA7F9 /* ic_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user.png; sourceTree = "<group>"; };
 		95B0D5E01BAC6AA1000EA7F9 /* ic_user_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user_selected.png; sourceTree = "<group>"; };
 		95B0D5E11BAC6AA1000EA7F9 /* newicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newicon.png; sourceTree = "<group>"; };
-		95CA36411C1DB7490097503A /* commonProblem.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = commonProblem.pdf; sourceTree = "<group>"; };
 		95CDC3721BC43C58004F5278 /* RecordJiaoHuiBidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordJiaoHuiBidViewController.h; sourceTree = "<group>"; };
 		95CDC3731BC43C58004F5278 /* RecordJiaoHuiBidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordJiaoHuiBidViewController.m; sourceTree = "<group>"; };
 		95CDC3741BC43C58004F5278 /* RecordJiaoHuiBidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordJiaoHuiBidViewController.xib; sourceTree = "<group>"; };
@@ -1111,9 +1111,9 @@
 		95B0D5D41BAC6A89000EA7F9 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				95CA36411C1DB7490097503A /* commonProblem.pdf */,
 				95ABEC301C1D1E8200B1F14A /* Agreement.pdf */,
-				95ABEC321C1D1E8200B1F14A /* operatingRules.pdf */,
+				95612C601C231C5E009A0B6E /* commonProblem.pdf */,
+				95612C611C231C5E009A0B6E /* operatingRules.pdf */,
 				95B0D5D51BAC6A96000EA7F9 /* Image */,
 			);
 			name = Resource;
@@ -1526,7 +1526,7 @@
 				956B01711BAE6B5000C06423 /* AlertBidViewController.xib in Resources */,
 				95F48DE41BAEAE1D008FEE22 /* FeedbackViewController.xib in Resources */,
 				952BD55E1BB7D94200981A2A /* LoginViewController.xib in Resources */,
-				95ABEC351C1D1E8200B1F14A /* operatingRules.pdf in Resources */,
+				95612C631C231C5E009A0B6E /* operatingRules.pdf in Resources */,
 				9572809F1BBE65810001B911 /* recordFirstTableViewCell.xib in Resources */,
 				956B017B1BAE6BAD00C06423 /* HeadBidViewController.xib in Resources */,
 				953564FA1C08A6BA00618AC5 /* uncheckBox.png in Resources */,
@@ -1547,13 +1547,13 @@
 				95023ABC1BC57F8B00F23AA1 /* FootDetailCreatBidViewController.xib in Resources */,
 				95E4F38A1BD005510099C1F5 /* MJRefresh.bundle in Resources */,
 				95F48DDE1BAEAC92008FEE22 /* MyAccountViewController.xib in Resources */,
+				95612C621C231C5E009A0B6E /* commonProblem.pdf in Resources */,
 				95B0D5E91BAC6AA1000EA7F9 /* ic_option_selected.png in Resources */,
 				18DDF01D1BB3BE8200B1AA81 /* blueArrow@2x.png in Resources */,
 				95023ACB1BC8D7EA00F23AA1 /* AlertBiddingTableViewCell.xib in Resources */,
 				956B01631BAC7B0600C06423 /* ic_user@2x.png in Resources */,
 				18DDF01C1BB3BE8200B1AA81 /* blueArrow.png in Resources */,
 				18DDF01A1BB3BE8200B1AA81 /* blackArrow.png in Resources */,
-				95CA36421C1DB7490097503A /* commonProblem.pdf in Resources */,
 				956B015E1BAC7B0600C06423 /* ic_game_selected@2x.png in Resources */,
 				95B0D5EC1BAC6AA1000EA7F9 /* newicon.png in Resources */,
 				95023AC11BC6C9B000F23AA1 /* CycleSettingBegainBidViewController.xib in Resources */,
@@ -1823,8 +1823,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fujianshenquanzhoushiquankangqujieshanzhen ZhengJiangMing (XBFS9278W8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fujianshenquanzhoushiquankangqujieshanzhen ZhengJiangMing (XBFS9278W8)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1844,8 +1844,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fujianshenquanzhoushiquankangqujieshanzhen ZhengJiangMing (XBFS9278W8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fujianshenquanzhoushiquankangqujieshanzhen ZhengJiangMing (XBFS9278W8)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

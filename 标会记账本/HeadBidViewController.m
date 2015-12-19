@@ -24,6 +24,9 @@
 @property(nonatomic,strong)NSIndexPath *indexPath;
 @property (strong,nonatomic) NSMutableArray *myDataMuArray;
 
+
+@property (strong, nonatomic) IBOutlet UILabel *noneDataLabel;
+
 @property (nonatomic, strong) NSMutableSet *openCell;//展开的section index集合
 @property (nonatomic, strong) UIBarButtonItem *rightButtonItem;
 
@@ -55,9 +58,10 @@
     NSString *phoneNumber = [[NSUserDefaults standardUserDefaults] objectForKey:KUserPhone];
     NSString *passwordUser = [[NSUserDefaults standardUserDefaults] objectForKey:KUserPassword];
     if (phoneNumber.length != 0 && passwordUser.length != 0) {
-        
+        [self.openCell removeAllObjects];
         [self getHeadBidData:[NSString stringWithFormat:@"%d",page]];
         [self setupRefresh];
+        [self.tableView reloadData];
     }
 }
 
@@ -68,8 +72,6 @@
     reloading = NO;
     self.tableView.separatorStyle =UITableViewCellSeparatorStyleNone;
     [self tableHeaderView];
-    
-    
     
 }
 
@@ -281,12 +283,12 @@
     
     
 }
-
-- (void)clickCycleSettingCellMethod:( int ) value{
-    //0:往下标1  1:往下标2  2:往下标3  3:往上标
-    BidDownTableViewCell *aBidDown =[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:value inSection:0]];
-    
-}
+//
+//- (void)clickCycleSettingCellMethod:( int ) value{
+//    //0:往下标1  1:往下标2  2:往下标3  3:往上标
+//    BidDownTableViewCell *aBidDown =[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:value inSection:0]];
+//    
+//}
 
 #pragma mark - DropDownCellDelegate
 
@@ -298,14 +300,17 @@
     NSNumber *previous=[self.openCell anyObject];
     if([self.openCell count]>0){//有cell已经展开
         [self.openCell removeAllObjects];
-        if ([previous integerValue] == index) { //展开的cell和当前点击的一致，操作为收起cell
+        if ([previous integerValue] == index) {
+            //展开的cell和当前点击的一致，操作为收起cell
             [self deleteActionCell:[previous integerValue] tableView:self.tableView];
+            
         }else{//操作:展开新的cell,收起旧的cell
             [self deleteActionCell:[previous integerValue] tableView:self.tableView];
             [self.openCell addObject:[NSNumber numberWithInt:(int)index]];
             [self insertActionCell:index tableView:self.tableView];
         }
     }else{
+        
         //没有cell展开，只需展开当前cell即可
         [self.openCell addObject:[NSNumber numberWithInt:(int)index]];
         [self insertActionCell:index tableView:self.tableView];
@@ -406,6 +411,7 @@
     self.tableView.footerRefreshingText = @"刷新中...";
 }
 
+
 #pragma mark 开始进入刷新状态
 - (void)headerRereshing
 {
@@ -480,6 +486,14 @@
                 }else{
                     [self.myDataMuArray addObjectsFromArray:json];
                 }
+                
+                if (self.myDataMuArray.count == 0) {
+                    self.noneDataLabel.hidden = NO;
+                    
+                }else{
+                    self.noneDataLabel.hidden = YES;
+                }
+                
                 
                 [self.tableView reloadData];
                 

@@ -218,7 +218,26 @@
     NSMutableArray *resultMutableArray =[[NSMutableArray alloc]  init];
     NSMutableArray *ddd =[NSMutableArray arrayWithArray:self.aNewData];
     
+    for (NSMutableDictionary *tempDic2 in self.aNewData) {
+        if ([self.myDataArray indexOfObject:tempDic2] == NSNotFound) {
+           [tempDic2 setObject:@"2" forKey:@"type"];
+        }
+        
+    }
     
+
+    
+    //2删除会脚
+    if (_aNewData.count > self.myDataArray.count) {
+        for (NSDictionary *tempDic in self.myDataArray) {
+            for (NSDictionary *tempDic2 in self.aNewData) {
+                if ([[tempDic objectForKey:@"participantId"] isEqualToString:[tempDic2 objectForKey:@"participantId"]]) {
+                    
+                }
+            }
+            
+        }
+    }
     for (int x=0; x<_aNewData.count; x++) {
         NSMutableDictionary *aNewMutableDic =[[NSMutableDictionary alloc] init];
         if ([[[_aNewData objectAtIndex:x]objectForKey:@"type"] isEqualToString:@"0"]) {
