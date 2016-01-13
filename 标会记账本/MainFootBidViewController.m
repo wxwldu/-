@@ -155,7 +155,7 @@
     UIView *aHeadView =[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 60)];
     UIButton *aButton;
     aButton = [self customButton:@"收益分析"];
-    aButton.frame = CGRectMake(50, 15, aHeadView.frame.size.width - 100, 40);
+    aButton.frame = CGRectMake((self.view.frame.size.width - 120)/0.2, 15, 120, 40);
     [aButton addTarget:self action:@selector(selectHeadButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [aHeadView addSubview:aButton];
     
