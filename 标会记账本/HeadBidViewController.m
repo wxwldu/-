@@ -78,14 +78,14 @@
 
 
 -(void)tableHeaderView{
-    UIView *aHeadView =[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 60)];
+    UIView *aHeadView =[[UIView alloc]initWithFrame:CGRectMake(0, 0, App_Frame_Width, 60)];
 //    aHeadView.backgroundColor =[UIColor lightGrayColor];
     
     UIButton *aButton =[UIButton buttonWithType:UIButtonTypeCustom];
 //    aButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
     [aButton setTitleColor:PorjectGreenColor forState:UIControlStateNormal];
     [aButton setTitle:@"我要起会" forState:UIControlStateNormal];
-    aButton.frame = CGRectMake(50, 15, self.view.frame.size.width - 100, 40);
+    aButton.frame = CGRectMake( (App_Frame_Width - 200)/2.0, 15, 200, 40);
     aButton.layer.masksToBounds = YES;
     aButton.layer.cornerRadius = 8;
     aButton.layer.borderWidth = 0.8;
