@@ -25,7 +25,7 @@
 
     UIButton *aButton;
     aButton = [self customButton:@"修改密码"];
-    aButton.frame = CGRectMake(80, 80, self.view.frame.size.width- 160, 40);
+    aButton.frame = CGRectMake(80, 80, self.view.frame.size.width - 160, 40);
     [aButton addTarget:self action:@selector(changePasswordButton) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:aButton];
     

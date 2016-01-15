@@ -36,28 +36,27 @@
     [super viewWillDisappear:animated];
 }
 
+-(void)viewDidLayoutSubviews
+{
+
+    if (APP_Frame_Height > 610) {
+      self.myScrollView.contentSize = CGSizeMake(App_Frame_Width,APP_Frame_Height
+                                                 );
+    }else{
+        self.myScrollView.contentSize = CGSizeMake(App_Frame_Width,610);
+    }
+    
+}
+
+
 - (void)viewDidLoad {
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [button setFrame:CGRectMake(30.0, 0.0, 28, 28)];
+
     
-   
-//    [_showBitFootButton setImage:[UIImage imageNamed:@"uncheckBox.png"] forState:UIControlStateNormal];
-//    [_showBitFootButton setImage:[UIImage imageNamed:@"checkBox.png"] forState:UIControlStateSelected];
-//    [_showBitFootButton setTitle:@"是否对会脚公开" forState:UIControlStateNormal];
-//    [_showBitFootButton setTitle:@"是否对会脚公开" forState:UIControlStateSelected];
-//    [_showBitFootButton setSelected:YES]; //默认公开
-//    [_showBitFootButton normalStyle];
-    
-//    [_showBitFootButton setImageEdgeInsets:UIEdgeInsetsMake(0, 25, 0, -55)];
-//    [_showBitFootButton setTitleEdgeInsets:UIEdgeInsetsMake(0, -25, 0, 25)];
-    
-//    _showBitFootButton.imageEdgeInsets = UIEdgeInsetsMake(0, _showBitFootButton.titleLabel.frame.size.width, 0, -_showBitFootButton.titleLabel.frame.size.width);
-//    _showBitFootButton.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0);
-    
-    
-//    [button addTarget:self action:@selector(checkButtonTapped:event:) forControlEvents:UIControlEventTouchUpInside];
-//    [button setSelected:contact.rowSelected];
-    
+    [self.myScrollView setFrame:CGRectMake(0, 64, App_Frame_Width, APP_Frame_Height)];
+    // 设置内容大小
+    self.myScrollView.contentSize = CGSizeMake(App_Frame_Width, 610);
+    [self.myScrollView setScrollEnabled:YES];
+    NSLog(@"ddd:%f  %f",App_Frame_Width,APP_Frame_Height);
     
     
     [super viewDidLoad];
@@ -526,7 +525,7 @@
     CGSize keyboardSize = [value CGRectValue].size;
     CGRect viewFrame = self.myScrollView.frame;
     viewFrame.size.height -= keyboardSize.height - (APPScreenBoundsHeight - self.myScrollView.frame.size.height);
-    self.myScrollView.contentSize = viewFrame.size;
+    self.myScrollView.contentSize = CGSizeMake(App_Frame_Width, 510);
     
 }
 

@@ -169,7 +169,8 @@
         
     }
     UIButton *accessroyButton =[UIButton buttonWithType:UIButtonTypeCustom];
-    accessroyButton.frame = CGRectMake(cell.frame.size.width-140, cell.frame.size.height-38, 120, 30) ;
+    accessroyButton.frame = CGRectMake(cell.frame.size.width-120, cell.frame.size.height-38, 120, 30) ;
+//    [accessroyButton setBackgroundColor:[UIColor redColor]];
     
     
     [accessroyButton normalStyle];
