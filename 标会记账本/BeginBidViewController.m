@@ -39,6 +39,7 @@
 -(void)viewDidLayoutSubviews
 {
 
+    [self.myScrollView setFrame:CGRectMake(0, 64, App_Frame_Width, APP_Frame_Height)];
     if (APP_Frame_Height > 610) {
       self.myScrollView.contentSize = CGSizeMake(App_Frame_Width,APP_Frame_Height
                                                  );
@@ -211,6 +212,7 @@
     [self.lowIncome resignFirstResponder];
     if (self.indexValue == 0) {
         _pickview =[[ZHPickView alloc] initDatePickWithDate:[NSDate date] datePickerMode:UIDatePickerModeDate isHaveNavControler:NO];
+        [_pickview setPickViewColer:[UIColor lightGrayColor]];
         _pickview.segmentControl.selectedSegmentIndex = 1;
     } else {
         NSString *calendarTypeStr =[self.myDataBidDetail objectForKey:@"calendarType"];
@@ -218,6 +220,8 @@
         NSDate *firstDate =[UserMessage StringFormatToData:firstDateStr];
         
         _pickview =[[ZHPickView alloc] initLimitStartDatePickWithStartDate:nil andLargeDate:self.nextDate andDefaulDate:firstDate datePickerMode:UIDatePickerModeDate isHaveNavControler:NO];
+        [_pickview setPickViewColer:[UIColor lightGrayColor]];
+        
         //    _pickview =[[ZHPickView alloc] initDatePickWithDate:firstDate datePickerMode:UIDatePickerModeDate isHaveNavControler:NO];
         _pickview.segmentControl.selectedSegmentIndex = [calendarTypeStr intValue];
     }

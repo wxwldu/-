@@ -79,6 +79,7 @@
         [self setFrameWith:isHaveNavControler];
         [self setUpToolBar];
         
+        self.backgroundColor = [UIColor lightGrayColor];
     }
     return self;
 }
@@ -91,6 +92,8 @@
         _defaulDate=defaulDate;
         [self setUpDatePickerWithdatePickerMode:(UIDatePickerMode)datePickerMode];
         [self setFrameWith:isHaveNavControler];
+        self.backgroundColor = [UIColor lightGrayColor];
+        
         [self setUpToolBarTwo];
        
     }
@@ -105,6 +108,7 @@
         _defaulDate=defaulDate;
         [self setUpStartDatePickerWithstartDatePickerMode:(UIDatePickerMode)datePickerMode];
 
+        self.backgroundColor = [UIColor lightGrayColor];
         [self setFrameWith:isHaveNavControler];
         [self setUpToolBarTwo];
         
@@ -122,7 +126,7 @@
         _largeDate = largerDate;
         [self LimitStartDatePickerWithstartDatePickerMode:datePickerMode];
 //        [self setUpStartDatePickerWithstartDatePickerMode:(UIDatePickerMode)datePickerMode];
-        
+        self.backgroundColor = [UIColor lightGrayColor];
         [self setFrameWith:isHaveNavControler];
         [self setUpToolBarTwo];
         
@@ -178,7 +182,7 @@
 -(void)setUpPickView{
     
     UIPickerView *pickView=[[UIPickerView alloc] init];
-    pickView.backgroundColor=[UIColor lightGrayColor];
+//    pickView.backgroundColor=[UIColor lightGrayColor];
     _pickerView=pickView;
     pickView.delegate=self;
     pickView.dataSource=self;
@@ -191,7 +195,7 @@
     UIDatePicker *datePicker=[[UIDatePicker alloc] init];
     datePicker.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
     datePicker.datePickerMode = datePickerMode;
-    datePicker.backgroundColor=[UIColor lightGrayColor];
+//    datePicker.backgroundColor=[UIColor lightGrayColor];
     if (_defaulDate) {
         [datePicker setDate:_defaulDate];
     }
@@ -206,7 +210,7 @@
     UIDatePicker *datePicker=[[UIDatePicker alloc] init];
     datePicker.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
     datePicker.datePickerMode = datePickerMode;
-    datePicker.backgroundColor=[UIColor lightGrayColor];
+//    datePicker.backgroundColor=[UIColor lightGrayColor];
     if (_defaulDate) {
         [datePicker setMinimumDate:_defaulDate];
 //        [datePicker setDate:_defaulDate];
@@ -222,7 +226,7 @@
     UIDatePicker *datePicker=[[UIDatePicker alloc] init];
     datePicker.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
     datePicker.datePickerMode = datePickerMode;
-    datePicker.backgroundColor=[UIColor lightGrayColor];
+//    datePicker.backgroundColor=[UIColor lightGrayColor];
     if (_defaulDate) {
         [datePicker setMinimumDate:_limitStartDate];
         [datePicker setMaximumDate:_largeDate];
