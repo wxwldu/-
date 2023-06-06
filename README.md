@@ -31,7 +31,7 @@
 
 [官网](https://link.juejin.cn/?target=https%3A%2F%2Fdocs.swift.org%2Fswift-book%2FLanguageGuide%2FTheBasics.html)\
 [SwiftGG](https://link.juejin.cn/?target=https%3A%2F%2Fswiftgg.gitbook.io%2Fswift%2F)\
-[GitHub 汉化库](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fwyk111wyk%2Flearning-notes%2Ftree%2Fmaster%2Fswift%2Fswift-language-guide)\
+[GitHub 汉化库](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fwyk111wyk%2Flearning-notes%2Ftree%2Fmaster%2Fswift%2Fswift-language-guide)
 
 对语言有了大概的了解后，就可以开始对 SwiftUI 的学习，假如遇到问题可以反复回去查看之前的资料。很多被忽略的细节，或是当时初看没概念的部分，结合具体的案例就能够有比较透彻的理解。
 
@@ -40,7 +40,7 @@
 3.[Hacking with swift](https://link.juejin.cn/?target=https%3A%2F%2Fwww.hackingwithswift.com%2F100%2FswiftUI)：这是国外一个程序员用业余时间搭建的分享网站，有大量的文章可以阅读，还有推荐初学者跟着做的「100 Days of SwiftUI」课程。\
 4.[苹果官方文档](https://link.juejin.cn/?target=https%3A%2F%2Fdeveloper.apple.com%2Fdocumentation%2F)：文档是必读的，虽然很多文档缺乏工程细节，但是文档涉及很多概念性的内容，你可以知道官方是怎么思考的，并且有很多具体的机制参数。我本人有一个习惯，要是工程涉及某个框架，会把相关的文档都翻译一遍。\
 5.[Stack Overflow](https://link.juejin.cn/?target=https%3A%2F%2Fstackoverflow.com%2F)：有问题查询专用，在谷歌中搜索错误代码或者关键词基本都会由该网站给答案。\
-6.阅读 SwiftUI 库的源代码 \
+6.阅读 SwiftUI 库的源代码 
 
 作者：洋仔
 链接：https://juejin.cn/post/6997313521067229214
