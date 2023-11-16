@@ -12,7 +12,7 @@
     2>  http://dtrace.org/blogs/
 
 
-### 二、Objective-C学习
+### 二、Objective-C知识
 
 1.[《禅与 Objective-C 编程艺术》](https://objc-zen-book.books.yourtion.com/)\
 
@@ -23,7 +23,7 @@
 
 
 
-### 三、iOS底层学习
+### 三、iOS高级知识
 
 1.[Arm Architecture Reference Manual for A-profile architecture](https://developer.arm.com/documentation/ddi0487/ha/)\
 2.[ardp指令、操作、详细说明](https://developer.arm.com/documentation/ddi0602/2022-06/Base-Instructions/ADRP--Form-PC-relative-address-to-4KB-page-)\
@@ -31,6 +31,7 @@
 4.[ARMv8 A64 Quick Reference](https://courses.cs.washington.edu/courses/cse469/19wi/arm64.pdf)\
 5.[ARMv8 (AArch64) Instruction Encoding](https://kitoslab-eng.blogspot.com/2012/10/armv8-aarch64-instruction-encoding.html)\
 
+6.[ios 安全知识](https://wizardforcel.gitbooks.io/ios-sec-wiki/content/)\
 
 ### 四、SwiftUI学习
 
